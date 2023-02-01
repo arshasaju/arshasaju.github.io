@@ -1,0 +1,54 @@
+
+#hero{
+    display:block;
+    width: fit-content;
+    font-size: 3rem;
+    position: relative;
+    color:transparent;
+    animation: text_reveal 0.5s forwards;
+    animation-delay: 0,5;
+}
+#hero {
+    animation-delay: 1s;
+}
+
+#hero span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: red;
+    animation: text_reveal_box 1.5s ease forwards;
+    animation-delay: 0.5s;
+
+}
+
+#hero span{
+    animation-delay: 0.5s;
+}
+
+
+@keyframes text_reveal_box{
+    50%{
+        width:100%;
+        left:0;
+    }
+    100%{
+        width:0;
+        left:100%;
+    }
+}
+
+@keyframes text_reveal{
+    100%{
+        color:rgb(208, 163, 213)
+    }
+}
+
+@keyframes text_reveal_name{
+    100%{
+        color: rgb(92, 58, 97);
+        font-weight: 500;
+    }
+}
